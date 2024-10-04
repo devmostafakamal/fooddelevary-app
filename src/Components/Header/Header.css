@@ -1,0 +1,55 @@
+.header {
+  height: 34vw;
+  margin: 30px auto;
+  background: url("/assets/Food Del Frontend Assets/assets/header_img.png")
+    no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.header-contents {
+  display: flex;
+  position: absolute;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.5vw;
+  min-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+}
+.header-contents h2 {
+  font-weight: 500;
+  color: white;
+  font-size: 50px;
+}
+.header-contents p {
+  color: white;
+  font-size: 1vw;
+}
+.header-contents button {
+  border: none;
+  font-weight: 500;
+  color: #747474;
+  border-radius: 50px;
+  padding: 1vw 2.3vw;
+  background-color: white;
+  font-size: max(1vw, 13px);
+}
+
+@media (max-width: 1050px) {
+  .header-contents {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 750px) {
+  .header-contents {
+    max-width: 65%;
+  }
+  .header-contents p {
+    display: none;
+  }
+  .header-contents button {
+    padding: 2vw, 4vw;
+  }
+}
